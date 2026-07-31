@@ -1,7 +1,22 @@
 aid: myglamm
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/myglamm.png
 name: MyGlamm
-description: 'MyGlamm is a company surfaced as a portfolio company of accel and added to the API Evangelist
-  network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: 'MyGlamm is an Indian direct-to-consumer beauty and cosmetics brand operated by Sanghvi
+  Beauty and Technologies Private Limited (the Good Glamm Group), backed by Accel. It sells makeup, skincare
+  and personal-care products online and through retail. As of mid-2026 the parent company is undergoing
+  corporate insolvency proceedings and its primary domain serves an insolvency stakeholder notice portal.
+  No public developer API, developer portal, or API documentation surface was found during enrichment.'
 url: https://raw.githubusercontent.com/api-evangelist/myglamm/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +26,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Consumer
+- Beauty
+- Cosmetics
+- Direct to Consumer
+- Ecommerce
+- India
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +42,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/myglamm-domain-security.yml
 - type: Website
   url: https://www.myglamm.com/
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
